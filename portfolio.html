@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="Width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://www.wallpaperflare.com/static/131/614/394/office-home-office-creative-apple-wallpaper.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.horizontal-list{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+#name-social-container{
+    margin-top: 14vh;
+}
+#my-name{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icons li a i{
+    padding:10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+#p1{
+    color: rgba(15, 13, 13, 0.644);
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    line-height: 28px;
+    font-size: 1.1rem;
+}
+#writing{
+    color: #2857a4;
+    font-weight: 600;
+}
+#skills{
+    padding-top: 3rem;
+    background-color: rgb(232,232,232);
+}
+#skill{
+    color: blue;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#teacher{
+    color: blue;
+    font-size: 3rem;
+}
+#skil{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#lang{
+    list-style-type: none;
+}
+#Certificate{
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#education{
+    padding-top: 3rem;
+    background-color: rgb(232,232,232);
+}
+#ski{
+    color: blue;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+#contact{
+    background-image: linear-gradient(to right,#2857a4,#403066);
+}
+.edu,.edu tr,.edu th,.edu td
+{
+    border: 1px solid rgba(214, 11, 11, 0.479);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+}
+.edu td{
+    font-weight: 600;
+}
+.details p{
+    font-size: 1rem;
+    color: white;
+    padding-left: 20px;
+}
+.details h3{
+    padding-left: 20px;
+    color: white;
+    text-decoration: underline;
+}
+#contacts{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#teach{
+    color: white;
+    font-size: 3rem;
+}
+#ok{
+    margin-right: auto;
+    margin-left: auto;
+}
+#ok td{
+    padding: 20px;
+}
+input[type="text"],input[type="email"]{
+    padding: 0.3125rem;
+    background-color: #2857a4;
+    font-size: 1.3rem;
+    color: white;
+    width: 25rem;
+    height: 2.5rem;
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+textarea{
+    padding: 0.3125rem;
+    background-color: #2857a4;
+    font-size: 1.2rem;
+    color: white;
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+input[type="submit"]
+{
+    padding: 0.3125rem;
+    background-color: #2857a4;
+    font-size: 1.3rem;
+    color: white;
+    height: 2.5rem;
+    width: 12.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+}
+::placeholder{
+    color: white;
+    opacity: 0.8;
+    font-size: large;
+    padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+    #ok td{
+        display: flex;
+    }
+    textarea{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 650px){
+  input[type="text"],input[type="email"]{
+    width: 15rem;
+    height: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 280px){
+    #ok{
+        width: 17rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header id="body-header">
+    <nav>
+        <ul class="horizontal-list text-center nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="name-social-container">
+        <div class="text-center">
+            <h1 id="my-name">Jiya Khetarpal</h1>
+        </div>
+        
+    </div>
+</header>
+    <main>
+        <section id="about">
+            <div id="my-image">
+                <img src="C:\Users\Jiya\Desktop\Portfolio\Image.jpeg">
+                <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhz6HUxMd9mUMfDncjUVOfnmPSnmbNn2BTg&usqp=CAU">-->
+            </div>
+            <br><br>
+            <div id="p1">
+               <span id="writing"> As a fresher, I want to put to use my skills, technologies that I am familiar with, innovative thoughts that will benefit the
+Organization in the long run and also help me in building my professional career.</span>
+<ul>
+<li> Ability to easily adapt to changing work environments and technologies.</li>
+<li> Keen learner with ability to learn new knowledge with ease.</li>
+<li> Good Inter-Personal and Communication Skills.</li>
+<li>Determined.</li>
+<li> Ability to rapidly build relationship and set up trust.</li>
+</ul>
+</div>
+        </section>
+        <br><hr><br>
+        <section id="skills">
+            <div class="text-center">
+                <span id="teacher"><i class="fas fa-chalkboard-teacher"></i></span>
+                <span id="ski">&nbsp;SKILLS</span>
+            </div>
+            <div id="skil">
+                <ul id="lang">
+               <li>Languages: Java,C,C++</li>
+               <li>HTML, CSS, Javascript</li>
+               <li>Operating System, SQL</li>
+               </ul>
+               <br>
+               <ul id="Certificate">
+                   <li>1. Certification in Coursera Introduction to Web Development course</li>
+                   <li>2. Certification in Coding Ninja Programming Abstraction course</li>
+                   <li>3. Consistently maintained a good academic and attendance record.</li>
+                </ul>
+            </div>
+            <br>
+        </section>
+        <br><hr><br>
+        <section id="education">
+            <div class="text-center">
+                <span id="teacher"><i class="fas fa-graduation-cap"></i>
+                </span><span id="ski">Educational Qualifications</span>
+            </div>
+            <br>
+            <table class="edu">
+                <tr>
+                    <th>Year</th>
+                    <th>Degree</th>
+                    <th>Institute,City</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>B.E(C.S.E)(Pursuing)</td>
+                    <td>Chitkara 
+                        University,
+                        Rajpura</td>
+                    <td>9.65(CGPA)</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Secondary
+                        (CBSE)</td>
+                    <td>Baba Aapo aap 
+                        Guru Nanak
+                         public school,
+                         Chhintawala</td>
+                    <td>82.2%</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Matriculation
+                        (CBSE)</td>
+                    <td>GB International school ,Nabha</td>
+                    <td>9.6(CGPA)</td>
+                </tr>
+            </table>
+            <br>
+            </section>
+            <br><hr><br>
+            <section id="contact">
+                <br>
+                <div class="text-center">
+                    <span id="teach"><i class="far fa-address-card"></i>
+                    </span><span id="contacts">Contact</span>
+                </div>
+                <br>
+                <table id="ok">
+                <tr>
+                <td>
+                <div class="forms">
+                    <form>
+                        <input type="text" id="names" name="names" placeholder="Your name"><br><br>
+                        <input type="email" id="mail" name="mail" placeholder="Email id"><br><br>
+                        <textarea id="message" name="message" placeholder="Message" cols="42" rows="4" wrap="hard"></textarea>
+    <br><br>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                </td>
+                <td>
+                <div class="details">
+                    <h3>Get In Touch</h3>
+                    <p id="p2">Address : #677/1 Near Shiv Mandir Hira Mahal Colony, Nabha,</p>
+                    <p id="p2"><span><i class="fas fa-map-marker-alt"></i></span> Punjab, India,</p>
+                    <p id="p2"><span><i class="fas fa-mobile-alt"></i></span> +91 9041447005</p>
+                    <p id="p2"><span><i class="far fa-envelope"></i></span> Jiya1159.cse19@chitkara.edu.in</p>
+                </div>
+                <td>
+                </tr>
+                </table>
+                <br>
+                <div>
+                    <ul class="horizontal-list text-center social-icons">
+                        <li><a href="http://www.linkedin.com/in/jiya-khetarpal-9a80671b0" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Jiya-23" target="blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </section>
+    </main>
+</body>
+</html>
